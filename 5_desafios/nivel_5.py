@@ -13,12 +13,12 @@ Informe a senha desejada: """, mask="*"))
 
 INVALIDO = "Senha inválida, critérios não atendidos!"
 VALIDO = "Senha forte, criada com sucesso!"
-CARAC_ESPECIAL = ["!, @, #, $, %, &, *"]
+CARACTERE_ESPECIAL = ["!, @, #, $, %, &, *"]
 
 if (not any(caractere.isupper() for caractere in senha)) or \
     (not any(caractere.islower() for caractere in senha)) or \
     (not any(caractere.isdigit() for caractere in senha)) or \
-    (any(caractere in CARAC_ESPECIAL for caractere in senha)):
+    (any(caractere in CARACTERE_ESPECIAL for caractere in senha)):
     print(INVALIDO,'\n')
 else:
     print(VALIDO,'\n')
