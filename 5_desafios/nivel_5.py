@@ -15,7 +15,8 @@ INVALIDO = "Senha inválida, critérios não atendidos!"
 VALIDO = "Senha forte, criada com sucesso!"
 CARACTERE_ESPECIAL = ["!, @, #, $, %, &, *"]
 
-if (not any(caractere.isupper() for caractere in senha)) or \
+if len(senha) < 8 or \
+    (not any(caractere.isupper() for caractere in senha)) or \
     (not any(caractere.islower() for caractere in senha)) or \
     (not any(caractere.isdigit() for caractere in senha)) or \
     (any(caractere in CARACTERE_ESPECIAL for caractere in senha)):
