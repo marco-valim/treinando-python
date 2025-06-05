@@ -1,6 +1,6 @@
-lista = ["4","8","6"]
+lista = []
 
-#while True:
-   # lista.append(int(input(f'\nInsira valores inteiros positivos na lista: ')))
-print(f'''\nLista atualizada: {lista}
-Quantidade de valores na lista: {len(lista)}''')
+while True:
+    lista.append(int(input(f'\nInsira valores inteiros positivos na lista: ')))
+    print(f'''\nLista atualizada: {lista}
+Quantidade de números na lista: {len(lista)}''')
