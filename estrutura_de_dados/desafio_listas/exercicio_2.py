@@ -2,6 +2,7 @@ numeros = [10, 23, 45, 67, 81, 90, 3, 12, 55, 78]
 pares = []
 maiores_que_50 = []
 
+# Percorre a lista de numeros e pares e maiores que 50
 for numero in numeros:
     if numero % 2 == 0:
         pares.append(numero)
