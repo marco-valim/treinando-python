@@ -15,7 +15,6 @@ Escolha as opções do menu: '''))
     if menu == '1':
         tarefas.append(str(input(f'Informa a tarefa a ser adicionada: ')))
         continue
-
     elif menu == '2':
         print(f'Lista de tarefas: {tarefas}')
         continue
