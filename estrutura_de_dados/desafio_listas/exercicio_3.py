@@ -12,7 +12,6 @@ while menu != '5':
                 
 Escolha as opções do menu: '''))
 
-
     if menu == '1':
         tarefas.append(str(input(f'Informa a tarefa a ser adicionada: ')))
         continue
@@ -20,16 +19,13 @@ Escolha as opções do menu: '''))
     elif menu == '2':
         print(f'Lista de tarefas: {tarefas}')
         continue
-
     elif menu == '3':
         print(f'Lista de tarefas concluídas: {tarefas_concluidas}')
         continue
-
     elif menu == '4':
         concluida =  str(input(f'Informe a tarefa que deseja concluir: '))
         tarefas_concluidas.append(concluida)
         tarefas.remove(concluida)
         continue
-        
     else:
         print('Programa encerrado\n')
